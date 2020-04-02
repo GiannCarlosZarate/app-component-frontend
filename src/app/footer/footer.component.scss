@@ -1,0 +1,41 @@
+//CLASES CONTENEDOR DEL FOOTER
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
+    background: #d6dce9;
+}
+//CLASES ICONOS  DIRECCION Y CELULARES
+.ContIconos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.ContDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.ContDatos img{
+    width: 20px;
+    margin-right: 1rem;
+}
+.ContDatos p{
+    font-size: 15px;
+    color: rgba($color: #000, $alpha: 0.5);
+}
+//LOGO
+.ContLogo{
+    margin-top: 2rem;
+    width: 250px;
+}
+//MEDIAQUERI PARA CELULAR
+@media(max-width:700px){
+    section{
+        justify-content: center;
+    }
+}

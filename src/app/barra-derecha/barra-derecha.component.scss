@@ -1,0 +1,77 @@
+section{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    padding: 3rem 0rem 2rem 0rem;
+    box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 0.1);
+    transition: all 0.5s;
+}
+.ContConfig{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba($color: #2e3542, $alpha: 0.2);
+}
+.ContConfig:hover{
+    background: rgba($color: #2e3542, $alpha: 0.1);
+    cursor: pointer;
+}
+#Iconos-Cofig{
+    width: 22px;
+    margin-right: 1rem;
+}
+.txtConfig{
+    font-size: 20px;
+    color: rgba($color: #2e3542, $alpha: 0.6);
+}
+.Tile{
+    font-size: 12Px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.btn-info{
+    background: #eff2f7 !important;
+    border: none;
+    position: absolute;
+    top: 0.2px;
+    left: -46px;
+    padding: 0.8rem;
+}
+// #contenten{
+//     border-radius: 2px 0px 0px 2px;
+// }
+#Config{
+    width: 20px;
+    transition: all 0.5s;
+}
+.Config{
+    transform: rotate(none);
+}
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+#Config{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+#Config {
+     -webkit-animation-direction: reverse;
+     animation-direction: reverse;
+}
+//QUITAR BARRA
+.BackBr{
+    margin-right: -200px;
+    transition: all 0.5s;
+}
